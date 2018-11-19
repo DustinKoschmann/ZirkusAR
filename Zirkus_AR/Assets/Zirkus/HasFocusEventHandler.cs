@@ -42,8 +42,6 @@ public class HasFocusEventHandler : MonoBehaviour, ITrackableEventHandler {
             // Call OnTrackingLost() to hide the augmentations
             OnTrackingLost();
         }
-
-        Debug.Log(Time.timeScale);
     }
 
     protected virtual void OnTrackingFound()
