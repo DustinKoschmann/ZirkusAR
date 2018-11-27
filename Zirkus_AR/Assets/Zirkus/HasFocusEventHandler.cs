@@ -46,11 +46,13 @@ public class HasFocusEventHandler : MonoBehaviour, ITrackableEventHandler {
 
     protected virtual void OnTrackingFound()
     {
+        Debug.Log("Timescale 1");
         Time.timeScale = 1;
     }
 
     protected virtual void OnTrackingLost()
     {
+        Debug.Log("Timescale 0");
         Time.timeScale = 0;
     }
 }

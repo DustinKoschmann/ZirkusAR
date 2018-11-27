@@ -21,12 +21,13 @@ public class SwipeTest : MonoBehaviour {
         {
             if(swipeControls)
             ball = Instantiate(ballPrefab, this.transform.position, this.transform.rotation, parentObject);
+            //ball.transform.localScale = new Vector3(.4f, .4f, .4f);
             ballRb = ball.GetComponent<Rigidbody>();
         }
         if(swipeControls.SwipeUp)
         {
             ballRb.isKinematic = false;
-            ballRb.AddForce(Vector3.forward * 20f, ForceMode.Impulse);
+            ballRb.AddForce(Vector3.forward * 14f, ForceMode.Impulse);
         }
 	}
 }
