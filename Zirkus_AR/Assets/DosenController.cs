@@ -21,14 +21,18 @@ public class DosenController : MonoBehaviour {
 			GetComponent<Image>().color = new Color32(220,111,111,255);
 		}
 		
-		Debug.Log (counter);
+		//Debug.Log (counter);
+		try {
+            // Wenn die Dose runtergefallen ist, dann counter++
+            for (int i = 0; counter < 6; i++) {
+                if (dosen[i] != null && dosen[i].transform.position.y < -20) {
+                    counter = counter + 1;
+                    Destroy(dosen[i]);
+                }
+            }
+        } catch {
+
+        }
 		
-		// Wenn die Dose runtergefallen ist, dann counter++
-		for (int i = 0; counter < 6; i++) {
-			if (dosen[i] != null && dosen[i].transform.position.y < -20) {
-				counter = counter + 1;
-				Destroy (dosen[i]);
-			}
-		}
 	}
 }
