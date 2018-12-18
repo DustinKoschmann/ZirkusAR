@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameEnd : MonoBehaviour {
 
+	public GameObject coupon;
 	public GameObject[] games;
 
 	// Use this for initialization
@@ -26,7 +27,8 @@ public class GameEnd : MonoBehaviour {
 	}
 	
 	IEnumerator End() {
-		yield return new WaitForSeconds(3);
-        GetComponent<Image>().color = new Color32(255,255,255,255);
+		yield return new WaitForSeconds(2);
+        GetComponent<Image>().color = new Color32(255,255,255,225);
+		coupon.GetComponent<Image>().color = new Color32(255,255,255,225);
     }
 }
