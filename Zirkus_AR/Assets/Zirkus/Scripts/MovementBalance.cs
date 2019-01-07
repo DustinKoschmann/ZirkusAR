@@ -3,42 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementBalance : MonoBehaviour {
-
-    public float speed = 2.0f;
-    public float rotateSpeed = 3.0f;
-
-    private Animator animator;
-    private CharacterController charController;
-    private Vector3 forward;
-    private float curSpeed;
-    private float verticalMovement;
-    private float horizontalMovement;
-
+    private int actualTarget;
     private bool isWalking = false;
+    private float speed = 0.1f;
+    private Transform parentTarget;
+    private Transform[] targets;
+    private Animator animator;
+    private bool firedOnce = false;
+    private bool zielErreicht = false;
 
     // Use this for initialization
     void Start () {
+        actualTarget = 0;
         animator = this.transform.GetComponent<Animator>();
-        charController = this.transform.GetComponent<CharacterController>();
-	}
+    }
 
 	
 	// Update is called once per frame
 	void Update () {
-        verticalMovement = Input.GetAxis("Vertical");
-        Debug.Log(verticalMovement);
-        //horizontalMovement = Input.GetAxis("Horizontal");
+        if (!firedOnce) {
+            try {
+                parentTarget = GameObject.Find("Targets").transform;
+            } catch { }      
+            
+            if(parentTarget != null) {
+                firedOnce = true;
+            }
 
-        forward = transform.TransformDirection(Vector3.forward);
-        curSpeed = speed * verticalMovement;
+            Transform[] children = {
+                parentTarget.GetChild(0),
+                parentTarget.GetChild(1),
+                parentTarget.GetChild(2),
+                parentTarget.GetChild(3),
+                parentTarget.GetChild(4)
+            };
 
-        if(verticalMovement > 0 || verticalMovement < 0) {
-            isWalking = true;
-            charController.SimpleMove(forward * curSpeed);
-        } else if(verticalMovement == 0) {
-            isWalking = false;
+            targets = children;
+            Debug.Log(targets.Length);
+        } else {
+            if (actualTarget >= targets.Length - 1) {
+                zielErreicht = true;
+            }
+
+            if ((transform.position == targets[actualTarget].position) && !zielErreicht) {
+                actualTarget++;
+            }            
+
+            if(!zielErreicht) {
+                isWalking = true;
+            } else {
+                isWalking = false;
+            }
+            animator.SetBool("isWalking", isWalking);
+
+
+
+            float step = speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, targets[actualTarget].position, step);
         }
-
-        animator.SetBool("isWalking", isWalking);
 	}
 }
