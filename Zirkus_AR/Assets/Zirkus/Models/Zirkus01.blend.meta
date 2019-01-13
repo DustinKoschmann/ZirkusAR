@@ -199,6 +199,7 @@ ModelImporter:
     100386: Zaun01_032
     100388: //RootNode
     100390: ZirkusMain
+    100392: ZirkusMain_001
     400000: BalanceBalkon01
     400002: BalanceBalkon01_001
     400004: BalanceGer_st01
@@ -395,6 +396,7 @@ ModelImporter:
     400386: Zaun01_032
     400388: //RootNode
     400390: ZirkusMain
+    400392: ZirkusMain_001
     2100000: unnamed
     2300000: BalanceBalkon01
     2300002: BalanceBalkon01_001
@@ -591,6 +593,7 @@ ModelImporter:
     2300384: Zaun01_031
     2300386: Zaun01_032
     2300388: ZirkusMain
+    2300390: ZirkusMain_001
     3300000: BalanceBalkon01
     3300002: BalanceBalkon01_001
     3300004: BalanceGer_st01
@@ -786,6 +789,7 @@ ModelImporter:
     3300384: Zaun01_031
     3300386: Zaun01_032
     3300388: ZirkusMain
+    3300390: ZirkusMain_001
     4300000: Cube_152
     4300002: BezierCurve_003
     4300004: BezierCurve_002
@@ -981,6 +985,7 @@ ModelImporter:
     4300384: Zaun01
     4300386: ZirkusMain
     4300388: Cube
+    4300390: ZirkusMain_001
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

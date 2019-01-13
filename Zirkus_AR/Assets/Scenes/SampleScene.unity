@@ -2970,6 +2970,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 400392, guid: 67a55a44422b13b4ea4999ffb6983b33, type: 3}
+      propertyPath: m_RootOrder
+      value: 196
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300390, guid: 67a55a44422b13b4ea4999ffb6983b33, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 36b1f386c1720c94889ac11ac9c8c6d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a55a44422b13b4ea4999ffb6983b33, type: 3}
   m_IsPrefabAsset: 0
@@ -3733,8 +3741,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/VuforiaMars_Images.xml
   mAspectRatio: 1.7272727
   mImageTargetType: 0
-  mWidth: 0.5731579
-  mHeight: 0.99
+  mWidth: 0.57894737
+  mHeight: 1
 --- !u!4 &1649592232
 Transform:
   m_ObjectHideFlags: 0
@@ -3742,8 +3750,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649592225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.97, y: 1.99, z: 0}
-  m_LocalScale: {x: 0.99, y: 0.99, z: 0.99}
+  m_LocalPosition: {x: -7.654, y: 1.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1518156732}
   - {fileID: 1042323448}
