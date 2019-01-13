@@ -1262,8 +1262,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/VuforiaMars_Images.xml
   mAspectRatio: 1.7272727
   mImageTargetType: 0
-  mWidth: 0.06985
-  mHeight: 0.12065
+  mWidth: 1.1578947
+  mHeight: 2
 --- !u!4 &551605715
 Transform:
   m_ObjectHideFlags: 0
@@ -1271,8 +1271,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551605709}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -11.83, y: 2.11, z: 0}
-  m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
+  m_LocalPosition: {x: -13.27, y: 1.46, z: 2.67}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1227988753}
   - {fileID: 2113669546}
@@ -1969,7 +1969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4692015612612154, guid: 5273a8400d634394a8ed1487dd9eb76f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.37
+      value: -0.375
       objectReference: {fileID: 0}
     - target: {fileID: 4692015612612154, guid: 5273a8400d634394a8ed1487dd9eb76f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3198,6 +3198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749f4f8c103a71d4b87158a829b64358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  artist: {fileID: 1042323447}
+  finish: {fileID: 259717255}
 --- !u!1 &1407830379
 GameObject:
   m_ObjectHideFlags: 0
