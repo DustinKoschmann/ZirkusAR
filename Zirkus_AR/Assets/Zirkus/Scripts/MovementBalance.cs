@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementBalance : MonoBehaviour {
     private bool isWalking = false;
     private bool firedOnce = false;
-    private bool zielErreicht = false;
+    public  bool zielErreicht = false;
     private bool isBalanced = false;
     private float speed = 0.1f;
     private float horizontalMovement;
