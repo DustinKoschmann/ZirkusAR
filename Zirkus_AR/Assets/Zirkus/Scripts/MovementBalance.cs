@@ -55,7 +55,7 @@ public class MovementBalance : MonoBehaviour {
                 actualTarget++;
             }            
 
-            if(!zielErreicht && isBalanced) {
+            if(!zielErreicht /*&& isBalanced*/) {
                 isWalking = true;
                 float step = speed * Time.deltaTime;
                 transform.position = Vector3.MoveTowards(transform.position, targets[actualTarget].position, step);
@@ -63,7 +63,7 @@ public class MovementBalance : MonoBehaviour {
                 isWalking = false;
             }
             animator.SetBool("isWalking", isWalking);
-            BalanceBone();
+            // BalanceBone();
         }
 	}
     void BalanceBone() {
