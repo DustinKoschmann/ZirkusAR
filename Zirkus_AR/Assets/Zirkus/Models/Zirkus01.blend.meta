@@ -200,6 +200,30 @@ ModelImporter:
     100388: //RootNode
     100390: ZirkusMain
     100392: ZirkusMain_001
+    100394: BalanceBalkon01_002
+    100396: BalanceGer_st01_002
+    100398: Cube_001
+    100400: Cube_153
+    100402: Cube_154
+    100404: Cube_155
+    100406: Cube_156
+    100408: Cube_157
+    100410: Cube_158
+    100412: Cube_159
+    100414: Cube_160
+    100416: Cube_161
+    100418: Cube_162
+    100420: Cube_163
+    100422: Cube_164
+    100424: Cube_165
+    100426: Cube_166
+    100428: Cube_167
+    100430: Cube_168
+    100432: Cube_169
+    100434: Cube_170
+    100436: Cube_171
+    100438: Cube_172
+    100440: Cube_173
     400000: BalanceBalkon01
     400002: BalanceBalkon01_001
     400004: BalanceGer_st01
@@ -397,7 +421,47 @@ ModelImporter:
     400388: //RootNode
     400390: ZirkusMain
     400392: ZirkusMain_001
+    400394: BalanceBalkon01_002
+    400396: BalanceGer_st01_002
+    400398: Cube_001
+    400400: Cube_153
+    400402: Cube_154
+    400404: Cube_155
+    400406: Cube_156
+    400408: Cube_157
+    400410: Cube_158
+    400412: Cube_159
+    400414: Cube_160
+    400416: Cube_161
+    400418: Cube_162
+    400420: Cube_163
+    400422: Cube_164
+    400424: Cube_165
+    400426: Cube_166
+    400428: Cube_167
+    400430: Cube_168
+    400432: Cube_169
+    400434: Cube_170
+    400436: Cube_171
+    400438: Cube_172
+    400440: Cube_173
     2100000: unnamed
+    2100002: Material_001
+    2100004: Platte
+    2100006: Material
+    2100008: Rollen
+    2100010: Gel_nder
+    2100012: Mast
+    2100014: StuhlMat
+    2100016: PolsterMat
+    2100018: Zelt1
+    2100020: Vorhang1
+    2100022: Vorhang2
+    2100024: BalanceSeil
+    2100026: Boden
+    2100028: Zelt2
+    2100030: Rand
+    2100032: Boden2
     2300000: BalanceBalkon01
     2300002: BalanceBalkon01_001
     2300004: BalanceGer_st01
@@ -594,6 +658,30 @@ ModelImporter:
     2300386: Zaun01_032
     2300388: ZirkusMain
     2300390: ZirkusMain_001
+    2300392: BalanceBalkon01_002
+    2300394: BalanceGer_st01_002
+    2300396: Cube_001
+    2300398: Cube_153
+    2300400: Cube_154
+    2300402: Cube_155
+    2300404: Cube_156
+    2300406: Cube_157
+    2300408: Cube_158
+    2300410: Cube_159
+    2300412: Cube_160
+    2300414: Cube_161
+    2300416: Cube_162
+    2300418: Cube_163
+    2300420: Cube_164
+    2300422: Cube_165
+    2300424: Cube_166
+    2300426: Cube_167
+    2300428: Cube_168
+    2300430: Cube_169
+    2300432: Cube_170
+    2300434: Cube_171
+    2300436: Cube_172
+    2300438: Cube_173
     3300000: BalanceBalkon01
     3300002: BalanceBalkon01_001
     3300004: BalanceGer_st01
@@ -790,6 +878,30 @@ ModelImporter:
     3300386: Zaun01_032
     3300388: ZirkusMain
     3300390: ZirkusMain_001
+    3300392: BalanceBalkon01_002
+    3300394: BalanceGer_st01_002
+    3300396: Cube_001
+    3300398: Cube_153
+    3300400: Cube_154
+    3300402: Cube_155
+    3300404: Cube_156
+    3300406: Cube_157
+    3300408: Cube_158
+    3300410: Cube_159
+    3300412: Cube_160
+    3300414: Cube_161
+    3300416: Cube_162
+    3300418: Cube_163
+    3300420: Cube_164
+    3300422: Cube_165
+    3300424: Cube_166
+    3300426: Cube_167
+    3300428: Cube_168
+    3300430: Cube_169
+    3300432: Cube_170
+    3300434: Cube_171
+    3300436: Cube_172
+    3300438: Cube_173
     4300000: Cube_152
     4300002: BezierCurve_003
     4300004: BezierCurve_002
@@ -986,6 +1098,30 @@ ModelImporter:
     4300386: ZirkusMain
     4300388: Cube
     4300390: ZirkusMain_001
+    4300392: BalanceBalkon01_002
+    4300394: BalanceGer_st01_002
+    4300396: Cube_173
+    4300398: Cube_172
+    4300400: Cube_171
+    4300402: Cube_170
+    4300404: Cube_169
+    4300406: Cube_168
+    4300408: Cube_167
+    4300410: Cube_166
+    4300412: Cube_165
+    4300414: Cube_164
+    4300416: Cube_163
+    4300418: Cube_162
+    4300420: Cube_161
+    4300422: Cube_160
+    4300424: Cube_159
+    4300426: Cube_158
+    4300428: Cube_157
+    4300430: Cube_156
+    4300432: Cube_155
+    4300434: Cube_154
+    4300436: Cube_153
+    4300438: Cube_001
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

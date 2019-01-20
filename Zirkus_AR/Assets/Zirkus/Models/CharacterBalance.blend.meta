@@ -78,6 +78,7 @@ ModelImporter:
     100144: toe_R
     100146: upper_arm_L
     100148: upper_arm_R
+    100150: Cylinder_001
     400000: //RootNode
     400002: chest
     400004: Cylinder
@@ -153,9 +154,14 @@ ModelImporter:
     400144: toe_R
     400146: upper_arm_L
     400148: upper_arm_R
+    400150: Cylinder_001
     2100000: unnamed
+    2100002: Material_001
+    2100004: Stab
+    2100006: Material
     4300000: Cylinder
     4300002: Plane
+    4300004: Cylinder_001
     7400000: Default Take
     7400002: Walk
     7400004: Idle
@@ -163,6 +169,7 @@ ModelImporter:
     9500000: //RootNode
     13700000: Cylinder
     13700002: Plane
+    13700004: Cylinder_001
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
