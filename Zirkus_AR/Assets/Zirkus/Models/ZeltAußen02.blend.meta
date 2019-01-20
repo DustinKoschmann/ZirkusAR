@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: e89eb74c36f3dfe4b8438106ab593bb0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BendEmptyVorhang
+    100002: BendEmptyVorhang_001
+    100004: Boden
+    100006: Eingang
+    100008: EingangBlau
+    100010: EingangRot
+    100012: EingangStangen
+    100014: EingangStangen_001
+    100016: Stange0
+    100018: Stange01
+    100020: Stange02
+    100022: Stange03
+    100024: Stange04
+    100026: Stange05
+    100028: Stange06
+    100030: Stange07
+    100032: Stange08
+    100034: Stange09
+    100036: Stange10
+    100038: Stange11
+    100040: Stange12
+    100042: Stange13
+    100044: Stange14
+    100046: Zaun
+    100048: Zelt_bot
+    100050: Zelt_top
+    100052: //RootNode
+    400000: BendEmptyVorhang
+    400002: BendEmptyVorhang_001
+    400004: Boden
+    400006: Eingang
+    400008: EingangBlau
+    400010: EingangRot
+    400012: EingangStangen
+    400014: EingangStangen_001
+    400016: Stange0
+    400018: Stange01
+    400020: Stange02
+    400022: Stange03
+    400024: Stange04
+    400026: Stange05
+    400028: Stange06
+    400030: Stange07
+    400032: Stange08
+    400034: Stange09
+    400036: Stange10
+    400038: Stange11
+    400040: Stange12
+    400042: Stange13
+    400044: Stange14
+    400046: Zaun
+    400048: Zelt_bot
+    400050: Zelt_top
+    400052: //RootNode
+    2100000: Zelt1
+    2100002: Zelt2
+    2100004: unnamed
+    2100006: Wood
+    2100008: Ground
+    2300000: Boden
+    2300002: Eingang
+    2300004: EingangBlau
+    2300006: EingangRot
+    2300008: EingangStangen
+    2300010: EingangStangen_001
+    2300012: Stange0
+    2300014: Stange01
+    2300016: Stange02
+    2300018: Stange03
+    2300020: Stange04
+    2300022: Stange05
+    2300024: Stange06
+    2300026: Stange07
+    2300028: Stange08
+    2300030: Stange09
+    2300032: Stange10
+    2300034: Stange11
+    2300036: Stange12
+    2300038: Stange13
+    2300040: Stange14
+    2300042: Zaun
+    2300044: Zelt_bot
+    2300046: Zelt_top
+    3300000: Boden
+    3300002: Eingang
+    3300004: EingangBlau
+    3300006: EingangRot
+    3300008: EingangStangen
+    3300010: EingangStangen_001
+    3300012: Stange0
+    3300014: Stange01
+    3300016: Stange02
+    3300018: Stange03
+    3300020: Stange04
+    3300022: Stange05
+    3300024: Stange06
+    3300026: Stange07
+    3300028: Stange08
+    3300030: Stange09
+    3300032: Stange10
+    3300034: Stange11
+    3300036: Stange12
+    3300038: Stange13
+    3300040: Stange14
+    3300042: Zaun
+    3300044: Zelt_bot
+    3300046: Zelt_top
+    4300000: EingangBlau
+    4300002: EingangRot
+    4300004: Stange14
+    4300006: Stange13
+    4300008: Stange12
+    4300010: Stange11
+    4300012: Stange10
+    4300014: Stange09
+    4300016: Stange08
+    4300018: Stange07
+    4300020: Stange06
+    4300022: Stange05
+    4300024: Stange04
+    4300026: Stange03
+    4300028: Stange02
+    4300030: Stange01
+    4300032: Stange0
+    4300034: EingangStangen_001
+    4300036: Zaun
+    4300038: Boden
+    4300040: EingangStangen
+    4300042: Eingang
+    4300044: Zelt_bot
+    4300046: Zelt_top
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
