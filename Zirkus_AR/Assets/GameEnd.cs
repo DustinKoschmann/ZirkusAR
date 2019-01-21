@@ -27,8 +27,8 @@ public class GameEnd : MonoBehaviour {
 	}
 	
 	IEnumerator End() {
-		yield return new WaitForSeconds(4);
-        GetComponent<Image>().color = new Color32(255,255,255,225);
-		coupon.GetComponent<Image>().color = new Color32(255,255,255,225);
+		yield return new WaitForSeconds(2);
+        GetComponent<Image>().color = new Color32(255,255,255,220);
+		coupon.GetComponent<Image>().color = new Color32(255,255,255,220);
     }
 }

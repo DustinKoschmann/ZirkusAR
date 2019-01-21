@@ -23,7 +23,7 @@ public class DosenController : MonoBehaviour {
 		if (dosen.Length == counter && done == false) {
 			done = true;
 			GetComponent<Image>().color = new Color32(220,111,111,255);
-			StartCoroutine(isDone());
+			// StartCoroutine(isDone());
 		}
 		
 		//Debug.Log (counter);
@@ -41,10 +41,10 @@ public class DosenController : MonoBehaviour {
 		
 	}
 	
-	IEnumerator isDone() {
+	/* IEnumerator isDone() {
 		yield return new WaitForSeconds(0.5f);
 		check.SetActive(true);
 		yield return new WaitForSeconds(3);
         check.SetActive(false);
-    }
+    } */
 }

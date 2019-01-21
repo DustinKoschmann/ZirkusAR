@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SwipeScript : MonoBehaviour {
+	
     public Transform ballPrefab;
-    public Transform fakeBallPrefab;
+    // public Transform fakeBallPrefab;
     public Transform parentObject;
 
     Vector2 startPos, endPos, direction; // touch start position, touch end position, swipe direction
@@ -15,26 +16,27 @@ public class SwipeScript : MonoBehaviour {
 
 	[SerializeField]
 	float throwForceInZ = 80f; // to control throw force in Z direction
-
+	
 	private Rigidbody rbBall;
     private Transform ball;
-    private Transform fakeBall;
+    // private Transform fakeBall;
     
 
     void Start()
 	{
+	
 	}
 
 	// Update is called once per frame
 	void Update () {
         MobileTouch();
-        MouseDebugTouch();
+		MouseDebugTouch();
 	}
 
     void MobileTouch() {
         // if you touch the screen
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
-            SpawnFakeBall();
+            // SpawnFakeBall();
 
             // getting touch position and marking time when you touch the screen
             touchTimeStart = Time.time;
@@ -57,7 +59,7 @@ public class SwipeScript : MonoBehaviour {
     void MouseDebugTouch() {
         // if you click the screen
         if(Input.GetMouseButtonDown(0)) {
-            SpawnFakeBall();
+            // SpawnFakeBall();
             touchTimeStart = Time.time;
             startPos = Input.mousePosition;
         }
@@ -75,16 +77,16 @@ public class SwipeScript : MonoBehaviour {
         }
     }
 
-    void SpawnFakeBall() {
+    /* void SpawnFakeBall() {
         fakeBall = Instantiate(fakeBallPrefab, this.transform.position, this.transform.rotation, parentObject);
-    }
+    } */
 
-    void RemoveFakeBall() {
+    /* void RemoveFakeBall() {
         Destroy(fakeBall.gameObject);
-    }
+    }*/
 
     void ThrowBall() {
-        RemoveFakeBall();
+        // RemoveFakeBall();
 
         // calculate swipe time interval 
         timeInterval = touchTimeFinish - touchTimeStart;
