@@ -8,7 +8,7 @@ public class DosenScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = this.transform.GetComponent<Rigidbody>();
-
+        //rb.isKinematic = false;
     }
 	
 	// Update is called once per frame

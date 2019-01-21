@@ -25,7 +25,26 @@ public class MovementBalance : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        horizontalMovement = Input.GetAxis("Horizontal") * -1;
+        if (Input.touchCount > 0) {
+            var touch = Input.touches[0];
+            if (touch.position.x < Screen.width/2) {
+                horizontalMovement = 1;
+            } else if (touch.position.x > Screen.width/2) {
+                horizontalMovement = -1;
+            }
+        } else if (Input.touchCount <= 0) {
+            horizontalMovement = 0;
+        }
+
+        if (Input.GetMouseButtonDown(0)) {
+            if (Input.mousePosition.x < Screen.width/2) {
+                horizontalMovement = 1;
+            } else if (Input.mousePosition.x > Screen.width/2) {
+                horizontalMovement = -1;
+            }
+        } else if (Input.GetMouseButtonUp(0)) {
+            horizontalMovement = 0;
+        }
 
         if (!firedOnce) {
             try {
@@ -55,7 +74,7 @@ public class MovementBalance : MonoBehaviour {
                 actualTarget++;
             }            
 
-            if(!zielErreicht /*&& isBalanced*/) {
+            if (!zielErreicht && isBalanced) {
                 isWalking = true;
                 float step = speed * Time.deltaTime;
                 transform.position = Vector3.MoveTowards(transform.position, targets[actualTarget].position, step);
@@ -63,7 +82,7 @@ public class MovementBalance : MonoBehaviour {
                 isWalking = false;
             }
             animator.SetBool("isWalking", isWalking);
-            // BalanceBone();
+            BalanceBone();
         }
 	}
     void BalanceBone() {
@@ -80,14 +99,25 @@ public class MovementBalance : MonoBehaviour {
                 isBalanced = false;
             }
             
-            if(!zielErreicht) {
-                //Wenn in Linksneigung
+            if (!zielErreicht) {
+                //Wenn in Linksneigung, rotier weiter nach links
                 if (boneRot.z > 0 && boneRot.z < 180 && horizontalMovement >= 0) {
                     boneToRotate.localEulerAngles += new Vector3(0, 0, 1f);
                 }
-                //Wenn in Rechtsneigung
-                else if (boneRot.z > 180 && boneRot.z < 360 && horizontalMovement <= 0) {
+
+                //Wenn zu weit nach links, nicht weiter rotieren
+                if (boneRot.z > 100 && boneRot.z < 180) {
+                    boneToRotate.localEulerAngles = new Vector3(0, 0, 100f);
+                }
+
+                //Wenn in Rechtsneigung, rotier weiter nach rechts
+                if (boneRot.z > 180 && boneRot.z < 360 && horizontalMovement <= 0) {
                     boneToRotate.localEulerAngles += new Vector3(0, 0, -1f);
+                }
+
+                //Wenn zu weit nach rechts, nicht weiter rotieren
+                if (boneRot.z < 260 && boneRot.z > 180) {
+                    boneToRotate.localEulerAngles = new Vector3(0, 0, 260f);
                 }
             }
             
