@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SwipeScript : MonoBehaviour {
-	
+
+	public int wurf;
     public Transform ballPrefab;
     // public Transform fakeBallPrefab;
     public Transform parentObject;
@@ -16,21 +17,27 @@ public class SwipeScript : MonoBehaviour {
 
 	[SerializeField]
 	float throwForceInZ = 80f; // to control throw force in Z direction
-	
+
 	private Rigidbody rbBall;
     private Transform ball;
     // private Transform fakeBall;
-    
+
 
     void Start()
 	{
-	
+
 	}
 
 	// Update is called once per frame
 	void Update () {
-        MobileTouch();
-		MouseDebugTouch();
+    MobileTouch();
+		// MouseDebugTouch();
+
+		// Max Anzahl Würfe...
+		if (wurf > 6) {
+			wurf = 1;
+		}
+
 	}
 
     void MobileTouch() {
@@ -52,11 +59,12 @@ public class SwipeScript : MonoBehaviour {
             // getting release finger position
             endPos = Input.GetTouch(0).position;
 
+						wurf++;
             ThrowBall();
         }
     }
 
-    void MouseDebugTouch() {
+    /* void MouseDebugTouch() {
         // if you click the screen
         if(Input.GetMouseButtonDown(0)) {
             // SpawnFakeBall();
@@ -73,9 +81,10 @@ public class SwipeScript : MonoBehaviour {
             // getting release mouse position
             endPos = Input.mousePosition;
 
+						wurf++;
             ThrowBall();
         }
-    }
+    } */
 
     /* void SpawnFakeBall() {
         fakeBall = Instantiate(fakeBallPrefab, this.transform.position, this.transform.rotation, parentObject);
@@ -87,8 +96,7 @@ public class SwipeScript : MonoBehaviour {
 
     void ThrowBall() {
         // RemoveFakeBall();
-
-        // calculate swipe time interval 
+        // calculate swipe time interval
         timeInterval = touchTimeFinish - touchTimeStart;
 
         // calculating swipe direction in 2D space
