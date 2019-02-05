@@ -10,6 +10,7 @@ public class MovementBalance : MonoBehaviour {
     private float speed = 0.1f;
     private float horizontalMovement;
     private int actualTarget;
+    public Transform startPosition;
 
     private Transform parentTarget;
     private Transform[] targets;
@@ -36,7 +37,7 @@ public class MovementBalance : MonoBehaviour {
             horizontalMovement = 0;
         }
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButton(0)) {
             if (Input.mousePosition.x < Screen.width/2) {
                 horizontalMovement = 1;
             } else if (Input.mousePosition.x > Screen.width/2) {
@@ -64,7 +65,7 @@ public class MovementBalance : MonoBehaviour {
             };
 
             targets = children;
-            Debug.Log(targets.Length);
+            //Debug.Log(targets.Length);
         } else {
             if (actualTarget >= targets.Length - 1) {
                 zielErreicht = true;
@@ -85,11 +86,17 @@ public class MovementBalance : MonoBehaviour {
             BalanceBone();
         }
 	}
+
+    void resetPosition() {
+        actualTarget = 0;
+        transform.position = startPosition.transform.position;
+    }
+
     void BalanceBone() {
         if (boneToRotate != null) {
             Vector3 boneRot = boneToRotate.localEulerAngles;
             //Debug.Log(boneRot.z);
-            //Debug.Log(horizontalMovement);
+            Debug.Log(horizontalMovement);
             boneToRotate.localEulerAngles += new Vector3(0, 0, horizontalMovement);
 
             //Wenn der Bone eine gerade Rotation hat. (40° Spielraum)
@@ -107,7 +114,8 @@ public class MovementBalance : MonoBehaviour {
 
                 //Wenn zu weit nach links, nicht weiter rotieren
                 if (boneRot.z > 100 && boneRot.z < 180) {
-                    boneToRotate.localEulerAngles = new Vector3(0, 0, 100f);
+                    boneToRotate.localEulerAngles = new Vector3(0, 0, 1f);
+                    resetPosition();
                 }
 
                 //Wenn in Rechtsneigung, rotier weiter nach rechts
@@ -117,7 +125,8 @@ public class MovementBalance : MonoBehaviour {
 
                 //Wenn zu weit nach rechts, nicht weiter rotieren
                 if (boneRot.z < 260 && boneRot.z > 180) {
-                    boneToRotate.localEulerAngles = new Vector3(0, 0, 260f);
+                    boneToRotate.localEulerAngles = new Vector3(0, 0, 1f);
+                    resetPosition();
                 }
             }
             
